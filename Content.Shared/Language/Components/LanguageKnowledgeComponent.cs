@@ -2,8 +2,6 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototy
 
 namespace Content.Shared.Language.Components;
 
-// TODO: move to server side, it's never synchronized!
-
 /// <summary>
 ///     Stores data about entities' intrinsic language knowledge.
 /// </summary>

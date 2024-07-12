@@ -6,6 +6,7 @@ using Content.Shared.Nutrition.Components;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Examine;
 using Content.Shared.FixedPoint;
+using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Interaction;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
@@ -19,6 +20,7 @@ namespace Content.Server.Nutrition.EntitySystems
         [Dependency] private readonly SolutionContainerSystem _solutionContainerSystem = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
+        [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
         [Dependency] private readonly TransformSystem _xformSystem = default!;
 
         public override void Initialize()
